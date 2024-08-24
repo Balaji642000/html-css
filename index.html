@@ -3,11 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./asserts/Developer.gif" type="image/gif">
+    <link rel="icon" href="./asserts/Developer.gif" type="image/gif" />
+    <link rel="stylesheet" href="styles.css" />
     <title>My HTML</title>
   </head>
   <body>
-    <u>Heading Tags</u>
+    <header style="background-color: aqua;">
+      <h1>Hi I am Balaji Karthikeyan</h1>
+      <div>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Help</a>
+      </div>
+    </header>
+    <main>
+      <u>Heading Tags</u>
     <h1>Hello : Heading h1</h1>
     <h2>Hello : Heading h2</h2>
     <h3>Hello : Heading h3</h3>
@@ -16,11 +27,11 @@
     <h6>Hello : Heading h6</h6>
 
     <u>Horizontal line "hr" </u>
-    <hr/>
+    <hr />
 
     <u>Line Break using "br" tag </u>
-    <br/>
-    <br/>
+    <br />
+    <br />
 
     <u>Paragraph tag "p"</u>
     <p>
@@ -57,18 +68,23 @@
       <img src="./asserts/github.jpg" alt="Github" height="100" width="200" />
     </a>
 
-    <br/>
-    <br/>
+    <br />
+    <br />
     <u>Audio files using Audio tags</u>
-    <br/>
-    <br/>
+    <br />
+    <br />
     <audio src="./asserts/audio.mp3" controls autoplay muted loop></audio>
 
+    <br />
     <u>Video</u>
-    <br>
-    <video controls >
-        <source src="./asserts/video.mp4" type="video/mp4">
+    <br />
+    <video controls>
+      <source src="./asserts/video.mp4" type="video/mp4" />
     </video>
+
+    <br />
+    <br />
+    <h3><u>Text Formating</u></h3>
     <p>this is Normal text</p>
     <p>this is <b>Bold</b> text</p>
     <p>this is <i>Italic</i> text</p>
@@ -79,9 +95,155 @@
     <p>this is <sub>Subscript</sub> text</p>
     <p>this is <sup>Superscript</sup> text</p>
     <p>this is <tt>monospaced</tt> text</p>
-    <p>this is <mark style="background-color: aqua;">Marked</mark> text</p>
-    
+    <p>this is <mark style="background-color: aqua">Marked</mark> text</p>
 
+    <!-- Span is used to apply inline css for a element -->
+    <!-- Div is used to apply styles in block level -->
 
-    </body>
+    <br />
+    <h3><u>Span</u></h3>
+    <br />
+    <p>
+      <span style="background-color: aqua"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident amet
+        quasi veritatis ratione autem sunt. Perspiciatis impedit assumenda
+        voluptatibus veniam vero mollitia a consectetur, molestias voluptas quos
+        quae, incidunt deleniti.</span
+      >
+    </p>
+
+    <br />
+    <h3><u>Div</u></h3>
+    <br />
+    <div style="background-color: burlywood">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+        pariatur a quia ratione sint magni officia nobis? Vel quam, explicabo ab
+        illo, cum numquam ad provident praesentium suscipit rerum iusto!
+      </p>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, alias
+        reprehenderit libero repellendus minus quidem id totam qui dolor
+        deleniti eligendi vel, inventore enim fugit placeat doloremque.
+        Mollitia, eaque sapiente.
+      </p>
+    </div>
+
+    <br />
+
+    <!-- Lists -->
+    <h3><u>Lists</u></h3>
+    <ul>
+      <li>Briyani</li>
+      <li>Porata</li>
+      <li>Fried Rice</li>
+      <ul>
+        <li>Thandori</li>
+        <li>Honey Chicken</li>
+        <li>Brain fry</li>
+      </ul>
+    </ul>
+
+    <br />
+
+    <ol>
+      <li>Briyani</li>
+      <li>Porata</li>
+      <li>Fried Rice</li>
+      <ol>
+        <li>Thandori</li>
+        <li>Honey Chicken</li>
+        <li>Brain fry</li>
+      </ol>
+    </ol>
+
+    <br />
+
+    <dl>
+      <dt>Briyani</dt>
+      <dd>Dindigul is famous for Briyani</dd>
+      <dt>Thandori</dt>
+      <dd>Its rich in protien</dd>
+    </dl>
+
+    <br />
+    <h3><u>Table</u></h3>
+    <table>
+      <thead style="background-color: aqua">
+        <th>Name</th>
+        <th>Age</th>
+        <th>District</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Balaji</td>
+          <td>24</td>
+          <td>Dindigul</td>
+        </tr>
+        <tr>
+          <td>Kavin</td>
+          <td>24</td>
+          <td>Salem</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- Forms -->
+    <h3><u>Forms</u></h3>
+
+    <form>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+      <label for="mob">Mobile #</label>
+      <input
+        type="tel"
+        name="mob"
+        id="mob"
+        pattern="[0-9]{3}-[0-9]{3}[0-9]{4}"
+        required
+      />
+      <br />
+      <label for="dob">DOB</label>
+      <input type="date" name="dob" id="dob" required />
+      <br />
+      <label for="Exp">Experience</label>
+      <input type="number" name="Exp" id="Exp" required />
+      <br />
+      <label for="gender">Gender</label>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" />
+      <label for="Female">Female</label>
+      <input type="radio" name="gender" id="female" />
+      <br />
+      <label for="role">Role</label>
+      <select name="role" id="payment">
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backendend</option>
+        <option value="Fullstack">Fullstack</option>
+      </select>
+      <br>
+      <label for="resume">Resume</label>
+      <input type="file" name="resume" id="resume" accept="image/png" />
+      <br />
+      <textarea name="comments" id="comments" rows="3" cols="35"></textarea>
+      <br>
+      <label for="accept">Accept Policy</label>
+      <input type="checkbox" name="accept" id="accept">
+      <br>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    </main>
+    <footer style="background-color: aqua;">
+      <b>Author: Balaji Karthikeyan</b><br>
+      <i>&copy; Copyrights Reserved</i><br>
+      <a href="mailto:balajik642000@gmail.com">Gmail</a>
+    </footer>
+  </body>
 </html>
