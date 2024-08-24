@@ -1,0 +1,42 @@
+h1{
+    color: brown;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 10px          10px       20px green, -10px -10px 20px blue;
+                /*horizontal | vertical | blue | Color*/
+}
+
+#box{
+    background-color: rgb(227, 93, 93);
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    box-shadow: 15px 15px 10px blue, -15px -15px 10px green;
+}
+
+/*---------------------------------------
+Margins
+margin : top right bottom left; 
+margin-left : auto => Always sticks to left
+margin-right : auto => Always sticks to right
+margin : auto => Always on center 
+same for padding as well 
+----------------------------------------------*/
+
+/*---------------------------------------------
+Float 
+float : left & right
+display : flow-root is used in the container where 
+the floating element is present to avoid overflowing
+-----------------------------------------------*/
+
+/*----------------------------------------------- 
+OverFlow
+overflow : visible => Default
+         : hidden => overflowing content is hidden
+         : clip => similar to hidden but we can set how 
+                   much content to be displyed even it 
+                   overflows
+         : scroll => add scroll bars horitonally and vertically
+         : autp => only add scroll bar where it is needed         
+--------------------------------------------------*/
