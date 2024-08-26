@@ -1,3 +1,7 @@
+*{
+    /* box-sizing: border-box; */
+}
+
 h1{
     color: brown;
     font-size: 40px;
@@ -6,13 +10,27 @@ h1{
                 /*horizontal | vertical | blue | Color*/
 }
 
-#box{
+.shadowbox{
     background-color: rgb(227, 93, 93);
     width: 150px;
     height: 150px;
     margin: 50px;
     box-shadow: 15px 15px 10px blue, -15px -15px 10px green;
 }
+
+.box{
+    padding: 20px;
+    border: 2px solid black;
+    width: 25%;
+    float: left;
+    
+}
+
+.box h1{
+    text-align: center;
+}
+
+
 
 /*---------------------------------------
 Margins
@@ -23,12 +41,14 @@ margin : auto => Always on center
 same for padding as well 
 ----------------------------------------------*/
 
+
 /*---------------------------------------------
 Float 
 float : left & right
 display : flow-root is used in the container where 
 the floating element is present to avoid overflowing
 -----------------------------------------------*/
+
 
 /*----------------------------------------------- 
 OverFlow
@@ -40,3 +60,17 @@ overflow : visible => Default
          : scroll => add scroll bars horitonally and vertically
          : autp => only add scroll bar where it is needed         
 --------------------------------------------------*/
+
+
+/* ------------------------------------------------
+Display
+display : inline => display content with the elements next to it, 
+          don't take a block of space, fits the content
+        : block => display content in a block, has height and width 
+          as well as extra space
+        : inline-block => display content containing width and height
+          but no extra space 
+        : none => Displays none
+visibility : hidden => hides the content but occupies the space          
+*/
+
